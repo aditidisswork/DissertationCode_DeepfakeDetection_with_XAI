@@ -1,0 +1,8 @@
+category,fidelity_mean,fidelity_median,consistency_mean,generation_time_mean,localisation_iou_mean,n_images
+Deepfakes_FF,0.4814,0.5536,0.25,50.9127,0.1183,5
+Face2Face_FF,0.5048,0.4418,0.5051,50.8557,0.1512,5
+FaceSwap_FF,0.5199,0.6639,0.239,51.0852,0.1191,5
+Fake_Celeb,0.2656,0.3214,0.3626,49.2026,,5
+NeuralTextures_FF,0.5531,0.6685,0.4336,49.889,0.1165,5
+Real_Celeb,0.4271,0.4662,0.2648,51.4206,,5
+Real_FF,0.6021,0.6787,0.2565,44.4602,,5
