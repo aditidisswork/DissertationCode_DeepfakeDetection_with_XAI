@@ -1,7 +1,8 @@
 # Forensic Evaluation of Explainable AI for Deepfake Detection 
 
 ## Repository Structure 
-...
+```text
+.
 ├── code/
 │ ├── Dissertationcode # Jupyter notebook 
 ├── model_results/ # XceptionNet model performance 
@@ -11,7 +12,7 @@
 │ ├──SHAP_vs_LIME/ #misclassified images and figure  
 │ ├── Framework/ #localisation, fidelity and consistency 
 └── README.md
-...
+```
 ## Overview 
 This project :
 1. Trains an XceptionNet deepfake detection model on FaceForensics++ and Celeb-DF v2, using an identity-safe train/validation split
