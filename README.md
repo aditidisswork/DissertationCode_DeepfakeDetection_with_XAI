@@ -33,7 +33,7 @@ This project :
 ## Explainability Analysis 
 
 - SHAP and LIME were applied to [the same 35 images](https://github.com/aditidisswork/DissertationCode_DeepfakeDetection_with_XAI/blob/main/results/SHAP/selected_images_35.json).
-- Consistency was assessed on a subset of 14 images (2 per category)  — `results/SHAP/shap_metrics_final.csv` and `results/LIME/lime_metrics_final.csv`, where `consistency` is `NaN` for images outside this subset.
+- Consistency was assessed on a subset of 14 images (2 per category)  — [SHAP](https://github.com/aditidisswork/DissertationCode_DeepfakeDetection_with_XAI/blob/main/results/SHAP/shap_metrics_final.csv) and [LIME](https://github.com/aditidisswork/DissertationCode_DeepfakeDetection_with_XAI/blob/main/results/LIME/lime_category_summary_final.csv), where `consistency` is `NaN` for images outside this subset.
 - Localisation IoU was computed against ground-truth manipulation masks, available for four FaceForensics++ manipulation categories (Deepfakes, Face2Face, FaceSwap, NeuralTextures); masks were not available for Celeb-DF v2.
 ## References 
 - Li, Y. et al. (2019) “Celeb-DF: A Large-scale Challenging Dataset for DeepFake Forensics.” arXiv. Available at: https://doi.org/10.48550/ARXIV.1909.12962.
