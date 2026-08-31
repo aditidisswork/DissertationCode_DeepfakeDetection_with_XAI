@@ -34,8 +34,10 @@ This project :
 ## Explainability Analysis 
 
 - SHAP and LIME were applied to [the same 35 images](https://github.com/aditidisswork/DissertationCode_DeepfakeDetection_with_XAI/blob/main/results/SHAP/selected_images_35.json).
-- Consistency was assessed on a subset of 14 images (2 per category)  — [SHAP](https://github.com/aditidisswork/DissertationCode_DeepfakeDetection_with_XAI/blob/main/results/SHAP/shap_metrics_final.csv) and [LIME](https://github.com/aditidisswork/DissertationCode_DeepfakeDetection_with_XAI/blob/main/results/LIME/lime_metrics_35images.csv), where `consistency` is `NaN` for images outside this subset.
-- Localisation IoU was computed against ground-truth manipulation masks, available for four FaceForensics++ manipulation categories (Deepfakes, Face2Face, FaceSwap, NeuralTextures); masks were not available for Celeb-DF v2.
+- Consistency was assessed on the full sample of 35 images  — [SHAP](https://github.com/aditidisswork/DissertationCode_DeepfakeDetection_with_XAI/blob/main/results/SHAP/shap_metrics_final.csv) achieved a mean consistency of 0.948, and [LIME](https://github.com/aditidisswork/DissertationCode_DeepfakeDetection_with_XAI/blob/main/results/LIME/lime_metrics_35images.csv) achieved a mean consistency of 0.397.
+- Localisation IoU was computed against ground-truth manipulation masks, available for four FaceForensics++ manipulation categories (Deepfakes, Face2Face, FaceSwap, NeuralTextures); masks were not available for Celeb-DF v2. Both methods showed low localisation overlap (SHAP - 0.0.92 and LIME - 0.126)
+- Fidelity was computed using a deletion test, which measures the change in the model's prediction when the top 20% of attributed pixels/regions were removed. (SHAP - 0.459 and LIME - 0.479) 
+- Transparency and Reproducibility tables were assessed qualitatively. The full rubrics are persented in the dissertation report.
 ## References 
 - Li, Y. et al. (2019) “Celeb-DF: A Large-scale Challenging Dataset for DeepFake Forensics.” arXiv. Available at: https://doi.org/10.48550/ARXIV.1909.12962.
 
