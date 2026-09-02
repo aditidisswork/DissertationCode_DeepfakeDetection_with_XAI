@@ -3,8 +3,8 @@
 ## Repository Structure 
 ```text
 .
-├── code/
-│ ├── Dissertationcode # Jupyter notebook 
+
+│ Dissertationcode # Jupyter notebook 
 ├── model_results/ # XceptionNet model performance 
 ├── results/
 │ ├── SHAP/ # SHAP per-image and category-level results (CSV, figures)
